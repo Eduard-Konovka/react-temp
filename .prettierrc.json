@@ -1,5 +1,5 @@
 {
-  "printWidth": 120,
+  "printWidth": 80,
   "tabWidth": 2,
   "useTabs": false,
   "singleQuote": true,
@@ -13,7 +13,7 @@
   "jsxSingleQuote": false,
   "quoteProps": "as-needed",
   "requirePragma": false,
-  "semi": false,
+  "semi": true,
   "vueIndentScriptAndStyle": false,
   "singleAttributePerLine": false
 }
