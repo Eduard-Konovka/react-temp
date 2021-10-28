@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import defaultImage from '../images/default.jpg';
+import defaultImage from './default.jpg';
 
 export default function Painting({
   imageUrl = defaultImage,
