@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Painting from './Painting';
+import Painting from '../Painting';
 
 export default function PaintingList({ items = [] }) {
   return (
