@@ -1,6 +1,6 @@
-import s from './ColorPicker.module.css';
+import s from './ColorPicker1.module.css';
 
-export default function ColorPicker({ options }) {
+export default function ColorPicker1({ options }) {
   return (
     <div className={s.container}>
       <h2 className={s.title}>Color Picker</h2>
@@ -14,7 +14,6 @@ export default function ColorPicker({ options }) {
             {option.label}
           </span>
         ))}
-        ;
       </div>
     </div>
   );
