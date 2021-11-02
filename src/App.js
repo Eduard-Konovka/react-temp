@@ -76,7 +76,7 @@ class App extends Component {
             <ColorPicker2 options={colorPickerOptions} />
           </Section>
 
-          <Section title="TodoList">
+          <Section title="To Do List">
             <div>
               <p>Общее количествово: {totalTodoCount}</p>
               <p>Количество выполненных: {completedTodoCount}</p>
