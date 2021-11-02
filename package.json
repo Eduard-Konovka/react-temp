@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "gh-pages": "^3.2.3",
     "modern-normalize": "^1.1.0",
     "node-sass": "^6.0.1",
     "prop-types": "^15.7.2",
@@ -19,8 +20,19 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eduard-Konovka/react-temp.git"
+  },
+  "author": "Eduard Konovka <ed098ua@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/Eduard-Konovka/react-temp/issues"
+  },
+  "homepage": "https://Eduard-Konovka.github.io/react-temp",
   "eslintConfig": {
     "extends": [
       "react-app",
