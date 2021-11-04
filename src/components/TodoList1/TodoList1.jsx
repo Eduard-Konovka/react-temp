@@ -1,4 +1,4 @@
-import s from './TodoList.module.css';
+import s from './TodoList1.module.css';
 
 const TodoList = ({ todos, onDeleteTodo }) => (
   <ul className={s.list}>
