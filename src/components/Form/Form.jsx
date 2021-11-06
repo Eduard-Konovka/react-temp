@@ -95,13 +95,12 @@ class Form extends Component {
             name="licence"
             checked={this.state.licence}
             onChange={this.hendleLicenceChenge}
-          />{' '}
+          />
           Согласен с условием
         </label>
 
         <button type="submit" disabled={!this.state.licence} className={s.btn}>
-          {' '}
-          Отправить{' '}
+          Отправить
         </button>
       </form>
     );
