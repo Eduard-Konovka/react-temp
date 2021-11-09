@@ -1,6 +1,6 @@
-import s from './ColorPicker1.module.css';
+import s from './ColorPicker.module.css';
 
-export default function ColorPicker1({ options }) {
+export default function ColorPicker({ options }) {
   return (
     <div className={s.container}>
       <h2 className={s.title}>Color Picker</h2>

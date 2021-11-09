@@ -4,7 +4,7 @@ import Container from './components/Container';
 import Section from './components/Section';
 import Form from './components/Form';
 import ColorPicker3 from './components/ColorPicker3';
-import TodoList2 from './components/TodoList2';
+import TodoList from './components/TodoList2';
 import TodoEditor from './components/TodoEditor';
 import Filter from './components/Filter';
 import colorPickerOptions from './db/colorPickerOptions.json';
@@ -113,7 +113,7 @@ class App extends Component {
         </Section>
 
         <Section title="To Do List">
-          <TodoList2
+          <TodoList
             todos={visibleTodos}
             onDeleteTodo={this.deleteTodo}
             onToggleCompleted={this.toggleCompleted}

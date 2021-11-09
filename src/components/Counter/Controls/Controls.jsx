@@ -1,13 +1,13 @@
-import s from './Controls.module.css';
+import Button from 'components/Button';
 
 const Controls = ({ onIncrement, onDecrement }) => (
-  <div className={s.controls}>
-    <button type="button" onClick={onIncrement}>
+  <div>
+    <Button type="button" onClick={onIncrement}>
       Увеличить на 1
-    </button>
-    <button type="button" onClick={onDecrement}>
+    </Button>
+    <Button type="button" onClick={onDecrement}>
       Уменьшить на 1
-    </button>
+    </Button>
   </div>
 );
 

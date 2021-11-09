@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import Button from 'components/Button';
 import s from './TodoEditor.module.css';
 
 export default class TodoEditor extends Component {
@@ -26,9 +27,7 @@ export default class TodoEditor extends Component {
           value={this.state.message}
           onChange={this.handleChange}
         ></textarea>
-        <button type="submit" className={s.btn}>
-          Сохранить
-        </button>
+        <Button type="submit">Сохранить</Button>
       </form>
     );
   }

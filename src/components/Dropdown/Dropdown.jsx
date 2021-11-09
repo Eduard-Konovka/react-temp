@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import Button from 'components/Button';
 import s from './Dropdown.module.css';
 
 class Dropdown extends Component {
@@ -17,9 +18,9 @@ class Dropdown extends Component {
 
     return (
       <div className={s.dropdown}>
-        <button type="button" className={s.toggle} onClick={this.toggle}>
+        <Button type="button" onClick={this.toggle}>
           {visible ? 'Скрыть' : 'Показать'}
-        </button>
+        </Button>
 
         {visible && <div className={s.menu}>Выпадающее меню</div>}
       </div>

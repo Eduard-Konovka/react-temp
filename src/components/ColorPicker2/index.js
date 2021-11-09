@@ -1,1 +1,1 @@
-export { default } from './ColorPicker2';
+export { default } from './ColorPicker';

@@ -1,5 +1,6 @@
 import classNames from 'classnames';
-import s from './TodoList2.module.css';
+import Button from 'components/Button';
+import s from './TodoList.module.css';
 
 const TodoList = ({ todos, onDeleteTodo, onToggleCompleted }) => (
   <ul className={s.list}>
@@ -12,13 +13,9 @@ const TodoList = ({ todos, onDeleteTodo, onToggleCompleted }) => (
           onChange={() => onToggleCompleted(id)}
         />
         <p className={s.text}>{text}</p>
-        <button
-          type="button"
-          className={s.btn}
-          onClick={() => onDeleteTodo(id)}
-        >
+        <Button type="button" onClick={() => onDeleteTodo(id)}>
           Удалить
-        </button>
+        </Button>
       </li>
     ))}
   </ul>

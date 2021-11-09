@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import Button from 'components/Button';
 import s from './Painting.module.css';
 import defaultImage from './default.jpg';
 
@@ -19,7 +20,7 @@ export default function Painting({
       </p>
       <p>Цена: {price} кредитов</p>
       <p>Доступность: {quantity > 9 ? 'есть в наличии' : 'заканчивается'}</p>
-      <button type="button">Добавить в корзину</button>
+      <Button type="button">Добавить в корзину</Button>
     </div>
   );
 }

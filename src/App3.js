@@ -4,7 +4,7 @@ import Section from './components/Section';
 import Counter from './components/Counter';
 import Dropdown from './components/Dropdown';
 import ColorPicker2 from './components/ColorPicker2';
-import TodoList1 from './components/TodoList1';
+import TodoList from './components/TodoList1';
 import colorPickerOptions from './db/colorPickerOptions.json';
 import todos from './db/todos.json';
 import './App.css';
@@ -48,7 +48,7 @@ class App extends Component {
             <p>Общее количествово: {totalTodoCount}</p>
             <p>Количество выполненных: {completedTodoCount}</p>
           </div>
-          <TodoList1 todos={todos} onDeleteTodo={this.deleteTodo} />
+          <TodoList todos={todos} onDeleteTodo={this.deleteTodo} />
         </Section>
       </Container>
     );
