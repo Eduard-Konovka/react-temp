@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import Button from '../Button';
 import { ImSearch } from 'react-icons/im';
 import { toast } from 'react-toastify';
 
@@ -18,6 +19,7 @@ export default class PokemonForm extends Component {
 
     if (this.state.pokemonName.trim() === '') {
       toast.error('Введите имя покемона!');
+      this.setState({ pokemonName: '' });
       return;
     }
 
@@ -34,10 +36,10 @@ export default class PokemonForm extends Component {
           value={this.state.pokemonName}
           onChange={this.handleNameChange}
         />
-        <button type="submit">
+        <Button type="submit">
           <ImSearch style={{ marginRight: 8 }} />
           Найти
-        </button>
+        </Button>
       </form>
     );
   }

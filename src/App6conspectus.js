@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Container from './components/Container';
+import Section from './components/Section';
 import articlesApi from './services/articlesApi';
 
 const ArticleList = ({ articles }) => (
@@ -34,11 +36,13 @@ class App extends Component {
     const { articles, isLoading, error } = this.state;
 
     return (
-      <>
-        {error && <p>Whoops, something went wrong: {error.message}</p>}
-        {isLoading && <p>Loading...</p>}
-        {articles.length > 0 && <ArticleList articles={articles} />}
-      </>
+      <Container title="6. Работа с REST API - конспект">
+        <Section title="Запрос на Hacker News API">
+          {error && <p>Whoops, something went wrong: {error.message}</p>}
+          {isLoading && <p>Loading...</p>}
+          {articles.length > 0 && <ArticleList articles={articles} />}
+        </Section>
+      </Container>
     );
   }
 }
