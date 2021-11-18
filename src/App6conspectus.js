@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Container from './components/Container';
 import Section from './components/Section';
-import articlesApi from './services/articlesApi';
+import fetchArticlesWithQuery from './services/articlesApi';
 
 const ArticleList = ({ articles }) => (
   <ul>
@@ -25,8 +25,7 @@ class App extends Component {
   componentDidMount() {
     this.setState({ isLoading: true });
 
-    articlesApi
-      .fetchArticlesWithQuery('react')
+    fetchArticlesWithQuery('react')
       .then(articles => this.setState({ articles }))
       .catch(error => this.setState({ error }))
       .finally(() => this.setState({ isLoading: false }));

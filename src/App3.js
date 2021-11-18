@@ -4,7 +4,7 @@ import Section from './components/Section';
 import Counter from './components/Counter';
 import Dropdown from './components/Dropdown';
 import ColorPicker2 from './components/ColorPicker2';
-import TodoList from './components/TodoList1';
+import TodoList from './components/TodoList';
 import colorPickerOptions from './db/colorPickerOptions.json';
 import todos from './db/todos.json';
 import './App.css';

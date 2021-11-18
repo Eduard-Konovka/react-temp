@@ -2,7 +2,7 @@ import Container from './components/Container';
 import Section from './components/Section';
 import Box from './components/Box';
 import Alert from './components/Alert';
-import ColorPicker from './components/ColorPicker1';
+import ColorPicker from './components/ColorPicker';
 import PaintingList from './components/PaintingList';
 import colorPickerOptions from './db/colorPickerOptions.json';
 import paintings from './db/paintings.json';
