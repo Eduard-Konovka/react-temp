@@ -21,7 +21,7 @@ export default function App() {
   };
 
   return (
-    <Container title="7. Хуки часть 1">
+    <Container title="7. Хуки - часть 1">
       <Section title="Хук эффекта - React-docs">
         <EffectHook />
       </Section>
