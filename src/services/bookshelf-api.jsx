@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'http://localhost:3004';
 
 async function fetchWithErrorHandling(url = '', config = {}) {
   const response = await fetch(url, config);
