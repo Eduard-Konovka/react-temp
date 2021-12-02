@@ -21,6 +21,7 @@
     "react-scripts": "4.0.3",
     "react-toastify": "^8.1.0",
     "shortid": "^2.2.16",
+    "slugify": "^1.6.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
