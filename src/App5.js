@@ -3,6 +3,7 @@ import shortid from 'shortid';
 import Container from './components/Container';
 import Section from './components/Section';
 import Button from './components/Button';
+import Stats from './components/Stats/Stats';
 import TodoList from './components/TodoList3';
 import TodoEditor from './components/TodoEditor';
 import Filter from './components/Filter';
@@ -156,10 +157,11 @@ class App extends Component {
         </Section>
 
         <Section title="To Do">
-          <div>
+          <Stats total={totalTodoCount} completed={completedTodoCount} />
+          {/* <div>
             <p>Всего заметок: {totalTodoCount}</p>
             <p>Выполнено: {completedTodoCount}</p>
-          </div>
+          </div> */}
           <Filter value={filter} onChange={this.changeFilter} />
           <TodoList
             todos={visibleTodos}
@@ -175,7 +177,7 @@ class App extends Component {
           </IconButton>
           {showModal && (
             <Modal forClose={toggleModal}>
-              <TodoEditor forSubmit={this.addTodo} forClick={toggleClock} />
+              <TodoEditor forSubmit={this.addTodo} forClick={toggleModal} />
               <Button type="button" onClick={toggleModal}>
                 Отменить
               </Button>

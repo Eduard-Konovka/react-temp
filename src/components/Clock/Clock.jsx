@@ -11,10 +11,10 @@ export default class Clock extends Component {
   componentDidMount() {
     // console.log('setInterval');
 
-    this.intervalId = setInterval(
-      () => this.setState({ time: new Date().toLocaleTimeString() }),
-      1000,
-    );
+    this.intervalId = setInterval(() => {
+      console.log(new Date().toLocaleTimeString());
+      this.setState({ time: new Date().toLocaleTimeString() });
+    }, 1000);
   }
 
   componentWillUnmount() {
