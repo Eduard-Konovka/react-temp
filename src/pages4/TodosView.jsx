@@ -1,8 +1,9 @@
 import { Component } from 'react';
 import Button from '../components/Button/Button';
-import TodoList from '../components/TodoList4/TodoList';
-import TodoEditor from '../components/TodoEditor2/TodoEditor';
+import TodoList from '../components/TodoList5/TodoList.conteiner';
+import TodoEditor from '../components/TodoEditor3/TodoEditor';
 import Filter from '../components/Filter2/Filter';
+import Stats from '../components/Stats2/Stats';
 import Modal from '../components/Modal/Modal';
 import IconButton from '../components/IconButton/IconButton';
 import { ReactComponent as AddIcon } from '../icons/add.svg';
@@ -15,15 +16,6 @@ const iconStyles = {
 class TodosView extends Component {
   state = {
     showModal: false,
-  };
-
-  calculateCompletedTodos = () => {
-    const { todos } = this.state;
-
-    return todos.reduce(
-      (total, todo) => (todo.completed ? total + 1 : total),
-      0,
-    );
   };
 
   toggleModal = () => {
@@ -39,6 +31,7 @@ class TodosView extends Component {
     return (
       <>
         <Filter />
+        <Stats />
         <IconButton
           type="button"
           style={iconStyles}
@@ -52,7 +45,7 @@ class TodosView extends Component {
 
         {showModal && (
           <Modal forClose={toggleModal}>
-            <TodoEditor />
+            <TodoEditor onSave={toggleModal} />
             <Button type="button" onClick={toggleModal}>
               Отменить
             </Button>

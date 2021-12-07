@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
 import store from './redux/store';
+import store2 from './redux2/store';
 import App1and2 from './App1and2';
 import App3 from './App3';
 import App4 from './App4';
@@ -15,6 +17,8 @@ import App9 from './App9';
 import App10 from './App10';
 import App10a from './App10a';
 import App11 from './App11';
+import App12 from './App12';
+import Spinner from './components/Spinner/Spinner';
 import './index.css';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -32,10 +36,22 @@ ReactDOM.render(
       <App9 />
       <App10 />
       <App10a />
-      <Provider store={store}>
-        <App11 />
-      </Provider>
     </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <App11 />
+      </BrowserRouter>
+    </Provider>
+    <Provider store={store2.store}>
+      <PersistGate
+        loading={<Spinner size={200} />}
+        persistor={store2.persistor}
+      >
+        <BrowserRouter>
+          <App12 />
+        </BrowserRouter>
+      </PersistGate>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root'),
 );
