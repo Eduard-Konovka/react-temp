@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import * as actions from 'redux/counter/counter-actions';
+import * as actions from 'redux2/counter/counter-actions';
 import Counter from './Counter';
 
 const mapStateToProps = state => ({
