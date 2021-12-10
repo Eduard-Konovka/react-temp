@@ -1,2 +1,0 @@
-(this["webpackJsonpreact-temp"]=this["webpackJsonpreact-temp"]||[]).push([[5],{173:function(e,r,t){"use strict";t.r(r),t.d(r,"default",(function(){return s}));var c=t(0);function s(e){var r=e.errorImage,t=e.messadge;return Object(c.jsxs)("div",{role:"alert",children:[Object(c.jsx)("img",{src:r,alt:"Error 404"}),Object(c.jsx)("p",{children:t})]})}}}]);
-//# sourceMappingURL=NotFoundView.08f1a9b4.chunk.js.map
