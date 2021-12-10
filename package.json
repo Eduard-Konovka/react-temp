@@ -37,7 +37,8 @@
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "api-server": "json-server --watch db.json --port 3004 --delay 300"
   },
   "repository": {
     "type": "git",

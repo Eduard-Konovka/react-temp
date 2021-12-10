@@ -114,5 +114,17 @@
       "id": 4,
       "name": "Вячеслав Шалыгин"
     }
+  ],
+  "todos": [
+    {
+      "text": "sdthfyfy",
+      "completed": true,
+      "id": 5
+    },
+    {
+      "text": "gnxfhnfhnfyc",
+      "completed": false,
+      "id": 6
+    }
   ]
 }

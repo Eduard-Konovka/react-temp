@@ -6,6 +6,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import store from './redux/store';
 import store2 from './redux2/store';
 import store3 from './redux3/store';
+import store4 from './redux4/store';
 import App1and2 from './App1and2';
 import App3 from './App3';
 import App4 from './App4';
@@ -20,6 +21,7 @@ import App10a from './App10a';
 import App11 from './App11';
 import App12 from './App12';
 import App12a from './App12a';
+import App13 from './App13';
 import Spinner from './components/Spinner/Spinner';
 import './index.css';
 import 'react-toastify/dist/ReactToastify.css';
@@ -63,6 +65,16 @@ ReactDOM.render(
           <App12a />
         </BrowserRouter>
       </PersistGate>
+    </Provider>
+    <Provider store={store4}>
+      {/* <PersistGate
+        loading={<Spinner size={200} />}
+        persistor={store4.persistor}
+      > */}
+      <BrowserRouter>
+        <App13 />
+      </BrowserRouter>
+      {/* </PersistGate> */}
     </Provider>
   </React.StrictMode>,
   document.getElementById('root'),
