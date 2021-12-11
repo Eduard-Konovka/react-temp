@@ -1,44 +1,36 @@
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Container from './components/Container';
-import AppBar from './components/AppBar2/AppBar';
+import AppBar from './components/AppBar3/AppBar';
 import Spinner from './components/Spinner/Spinner';
-import errorImage from './pages2/error.jpg';
+import errorImage from './pages7/error.jpg';
 import './App.css';
 
 const HomeView = lazy(() =>
-  import('./pages2/HomeView.jsx' /* webpackChunkName: "HomeView" */),
-);
-const AuthorsView = lazy(() =>
-  import('./pages2/AuthorsView.jsx' /* webpackChunkName: "AuthorsView" */),
+  import('./pages7/HomeView.jsx' /* webpackChunkName: "HomeView" */),
 );
 const BooksView = lazy(() =>
-  import('./pages2/BooksView.jsx' /* webpackChunkName: "BooksView" */),
+  import('./pages7/BooksView.jsx' /* webpackChunkName: "BooksView" */),
 );
 const BookDetailsView = lazy(() =>
   import(
-    './pages2/BookDetailsView.jsx' /* webpackChunkName: "BookDetailsView" */
+    './pages7/BookDetailsView.jsx' /* webpackChunkName: "BookDetailsView" */
   ),
 );
-const TableView = lazy(() =>
-  import('./pages2/TableView.jsx' /* webpackChunkName: "TableView" */),
-);
 const NotFoundView = lazy(() =>
-  import('./pages2/NotFoundView.jsx' /* webpackChunkName: "NotFoundView" */),
+  import('./pages7/NotFoundView.jsx' /* webpackChunkName: "NotFoundView" */),
 );
 
 export default function App() {
   return (
-    <Container title="10+. slug и location.state">
+    <Container title="13a. Асинхронный Redux, абстракция createAsyncThunk">
       <AppBar />
 
       <Suspense fallback={<Spinner size={200} />}>
         <Routes>
           <Route path="/" element={<HomeView />} />
-          <Route path="/authors/*" element={<AuthorsView />} />
           <Route path="/books" element={<BooksView />} />
           <Route path="/books/:slug" element={<BookDetailsView />} />
-          <Route path="/table" element={<TableView />} />
           <Route
             path="*"
             element={
