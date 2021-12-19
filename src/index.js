@@ -8,6 +8,7 @@ import store2 from './redux2/store';
 import store3 from './redux3/store';
 import store4 from './redux4/store';
 import store5 from './redux5/store';
+import store6 from './redux6/store';
 import App1and2 from './App1and2';
 import App3 from './App3';
 import App4 from './App4';
@@ -24,6 +25,7 @@ import App12 from './App12';
 import App12a from './App12a';
 import App13 from './App13';
 import App13a from './App13a';
+import App13b from './App13b';
 import Spinner from './components/Spinner/Spinner';
 import './index.css';
 import 'react-toastify/dist/ReactToastify.css';
@@ -83,6 +85,11 @@ ReactDOM.render(
         <App13a />
       </Provider>
     </BrowserRouter>
+    <Provider store={store6}>
+      <BrowserRouter>
+        <App13b />
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root'),
 );
