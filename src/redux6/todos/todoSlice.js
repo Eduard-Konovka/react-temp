@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const todoApi = createApi({
   reducerPath: 'todoApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://61bea5632a1dd4001708a355.mockapi.io',
+    baseUrl: process.env.REACT_APP_URL,
   }),
   tagTypes: ['Todo'],
   endpoints: builder => ({
