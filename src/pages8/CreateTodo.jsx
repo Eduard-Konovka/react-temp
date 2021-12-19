@@ -10,7 +10,10 @@ export default function CreateTodo() {
 
   const handleCreate = async e => {
     e.preventDefault();
-    createTodo(e.currentTarget.elements.content.value);
+    createTodo({
+      name: e.currentTarget.elements.name.value,
+      number: e.currentTarget.elements.number.value,
+    });
     e.currentTarget.reset();
     toast.success('Note created');
   };
@@ -19,7 +22,8 @@ export default function CreateTodo() {
     <>
       {isSuccess && <Navigate to="/todos" replace />}
       <form autoComplete="off" className={s.editor} onSubmit={handleCreate}>
-        <textarea name="content" className={s.textarea} />
+        <input type="text" name="name" className={s.textarea} />
+        <input type="text" name="number" className={s.textarea} />
 
         <Button type="submit" disabled={isLoading}>
           {isLoading && <Spinner size={18} />}
