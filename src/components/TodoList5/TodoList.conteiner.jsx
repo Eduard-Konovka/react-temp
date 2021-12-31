@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import todosActions from 'redux2/todos/todos-actions';
+import todosActions from 'store/redux2/todos/todos-actions';
 import TodoList from './TodoList';
 
 const getVisibleTodos = (allTodos, filter) => {

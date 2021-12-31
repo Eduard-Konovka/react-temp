@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { getValue, getStep } from 'redux3/counter/counter-selector';
-import * as actions from 'redux3/counter/counter-actions';
+import { getValue, getStep } from 'store/redux3/counter/counter-selector';
+import * as actions from 'store/redux3/counter/counter-actions';
 import Controls from './Controls/Controls';
 import Value from './Value/Value';
 import s from './Counter.module.css';

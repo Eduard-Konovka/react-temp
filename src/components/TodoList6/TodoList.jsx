@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import classNames from 'classnames';
-import { getVisibleTodos } from 'redux3/todos/todos-selector';
-import todosActions from 'redux3/todos/todos-actions';
+import { getVisibleTodos } from 'store/redux3/todos/todos-selector';
+import todosActions from 'store/redux3/todos/todos-actions';
 import Button from 'components/Button';
 import s from './TodoList.module.css';
 

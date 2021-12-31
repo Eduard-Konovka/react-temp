@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { getFilter } from 'redux3/todos/todos-selector';
-import todosActions from 'redux3/todos/todos-actions';
+import { getFilter } from 'store/redux3/todos/todos-selector';
+import todosActions from 'store/redux3/todos/todos-actions';
 import s from './Filter.module.css';
 
 export default function Filter() {

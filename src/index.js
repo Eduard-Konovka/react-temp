@@ -3,31 +3,33 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
-import store from './redux/store';
-import store2 from './redux2/store';
-import store3 from './redux3/store';
-import store4 from './redux4/store';
-import store5 from './redux5/store';
-import store6 from './redux6/store';
-import App1and2 from './App1and2';
-import App3 from './App3';
-import App4 from './App4';
-import App5 from './App5';
-import App6c from './App6c';
-import App6 from './App6';
-import App7 from './App7';
-import App8 from './App8';
-import App9 from './App9';
-import App10 from './App10';
-import App10a from './App10a';
-import App11 from './App11';
-import App12 from './App12';
-import App12a from './App12a';
-import App13 from './App13';
-import App13a from './App13a';
-import App13b from './App13b';
+import store from 'store/redux1/store';
+import store2 from 'store/redux2/store';
+import store3 from 'store/redux3/store';
+import store4 from 'store/redux4/store';
+import store5 from 'store/redux5/store';
+import store6 from 'store/redux6/store';
+import { store7, persistor7 } from 'store/redux7/store';
+import App1and2 from 'App/App1and2';
+import App3 from 'App/App3';
+import App4 from 'App/App4';
+import App5 from 'App/App5';
+import App6c from 'App/App6c';
+import App6 from 'App/App6';
+import App7 from 'App/App7';
+import App8 from 'App/App8';
+import App9 from 'App/App9';
+import App10 from 'App/App10';
+import App10a from 'App/App10a';
+import App11 from 'App/App11';
+import App12 from 'App/App12';
+import App12a from 'App/App12a';
+import App13 from 'App/App13';
+import App13a from 'App/App13a';
+import App13b from 'App/App13b';
+import App15and16 from 'App/App15and16';
 import Spinner from './components/Spinner/Spinner';
-import './index.css';
+import 'index.css';
 import 'react-toastify/dist/ReactToastify.css';
 
 ReactDOM.render(
@@ -71,14 +73,9 @@ ReactDOM.render(
       </PersistGate>
     </Provider>
     <Provider store={store4}>
-      {/* <PersistGate
-        loading={<Spinner size={200} />}
-        persistor={store4.persistor}
-      > */}
       <BrowserRouter>
         <App13 />
       </BrowserRouter>
-      {/* </PersistGate> */}
     </Provider>
     <BrowserRouter>
       <Provider store={store5}>
@@ -89,6 +86,13 @@ ReactDOM.render(
       <BrowserRouter>
         <App13b />
       </BrowserRouter>
+    </Provider>
+    <Provider store={store7}>
+      <PersistGate loading={<Spinner size={200} />} persistor={persistor7}>
+        <BrowserRouter>
+          <App15and16 />
+        </BrowserRouter>
+      </PersistGate>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root'),

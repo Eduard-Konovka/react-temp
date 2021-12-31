@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { connect } from 'react-redux';
 import Button from 'components/Button';
-import todosActions from 'redux/todos/todos-actions';
+import todosActions from 'store/redux1/todos/todos-actions';
 import s from './TodoList.module.css';
 
 const TodoList = ({ todos, onDeleteTodo, onToggleCompleted }) => (

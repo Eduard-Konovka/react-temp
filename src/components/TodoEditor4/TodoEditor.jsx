@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import Button from 'components/Button';
-import todosActions from 'redux/todos/todos-actions';
+import todosActions from 'store/redux1/todos/todos-actions';
 import s from './TodoEditor.module.css';
 
 export default function TodoEditor({ onSave }) {

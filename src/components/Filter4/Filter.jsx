@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import * as todosActions from 'redux4/todos/todos-actions';
+import * as todosActions from 'store/redux4/todos/todos-actions';
 import s from './Filter.module.css';
 
 const Filter = ({ value, onChange }) => (

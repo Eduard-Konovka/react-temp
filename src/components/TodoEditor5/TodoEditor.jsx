@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
 import Button from 'components/Button';
-import todosOperations from 'redux4/todos/todos-operations';
+import todosOperations from 'store/redux4/todos/todos-operations';
 import s from './TodoEditor.module.css';
 
 class TodoEditor extends Component {
