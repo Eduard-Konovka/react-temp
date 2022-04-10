@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import useLocalStorage from '../../hooks/useLocalStorage';
+import useLocalStorage from 'hooks/useLocalStorage';
 import s from './Form.module.css';
 
 export default function Form({ forSubmit }) {

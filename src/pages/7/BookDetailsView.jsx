@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useLocation, useNavigate, Link } from 'react-router-dom';
-import PageHeading from 'components/PageHeading/PageHeading';
+import PageHeading from 'components/PageHeading';
 import Button from 'components/Button';
 import * as bookShelfAPI from 'services/bookshelf-api';
 

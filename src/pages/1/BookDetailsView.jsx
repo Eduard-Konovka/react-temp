@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import PageHeading from 'components/PageHeading/PageHeading';
+import PageHeading from 'components/PageHeading';
 import * as bookShelfAPI from 'services/bookshelf-api';
 
 export default function BookDetailsView() {

@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import Button from 'components/Button/Button';
+import Button from 'components/Button';
 
 const initalFriends = [
   'Kolby Thompson',

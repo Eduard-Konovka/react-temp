@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getContacts } from 'store/redux7/contacts/contacts-selectors';
 import contactsOperations from 'store/redux7/contacts/contacts-operations';
-import Button from 'components/Button/Button';
+import Button from 'components/Button';
 import s from './ContactForm.module.css';
 
 export default function ContactForm() {

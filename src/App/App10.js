@@ -1,8 +1,8 @@
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Container from 'components/Container';
-import AppBar from 'components/AppBar2/AppBar';
-import Spinner from 'components/Spinner/Spinner';
+import AppBar from 'components/AppBar2';
+import Spinner from 'components/Spinner';
 // import HomeView from 'pages/1/HomeView';
 // import AuthorsView from 'pages/1/AuthorsView';
 // import BooksView from 'pages/1/BooksView';

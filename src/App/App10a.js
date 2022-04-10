@@ -1,8 +1,8 @@
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Container from 'components/Container';
-import AppBar from 'components/AppBar2/AppBar';
-import Spinner from 'components/Spinner/Spinner';
+import AppBar from 'components/AppBar2';
+import Spinner from 'components/Spinner';
 import errorImage from 'pages/2/error.jpg';
 import 'App/App.css';
 

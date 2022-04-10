@@ -1,4 +1,4 @@
-import Navigation from '../Navigation4/Navigation';
+import Navigation from 'components/Navigation4';
 import styles from './Appbar.module.css';
 
 export default function Appbar() {

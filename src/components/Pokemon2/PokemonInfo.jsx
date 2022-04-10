@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import PokemonDataView from './PokemonDataView';
 import PokemonErrorView from './PokemonErrorView';
 import PokemonPendingView from './PokemonPendingView';
-import pokemonAPI from '../../services/pokemon-api';
+import pokemonAPI from 'services/pokemon-api';
 
 const Status = {
   IDLE: 'idle',

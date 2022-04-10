@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import * as bookShelfAPI from 'services/bookshelf-api';
-import PageHeading from 'components/PageHeading/PageHeading';
+import PageHeading from 'components/PageHeading';
 
 export default function BooksView() {
   const { pathname } = useLocation();

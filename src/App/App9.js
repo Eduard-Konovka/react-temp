@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Container from 'components/Container';
-import AppBar from 'components/AppBar/AppBar';
+import AppBar from 'components/AppBar';
 import HomeView from 'pages/1/HomeView';
 import AuthorsView from 'pages/1/AuthorsView';
 import BooksView from 'pages/1/BooksView';

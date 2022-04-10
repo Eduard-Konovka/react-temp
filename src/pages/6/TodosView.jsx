@@ -1,14 +1,14 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
 import todosOperations from 'store/redux4/todos/todos-operations';
-import Button from 'components/Button/Button';
-import TodoList from 'components/TodoList7/TodoList.conteiner';
-import TodoEditor from 'components/TodoEditor5/TodoEditor';
-import Filter from 'components/Filter4/Filter';
-import Stats from 'components/Stats2/Stats';
-import Modal from 'components/Modal/Modal';
-import Spinner from 'components/Spinner/Spinner';
-import IconButton from 'components/IconButton/IconButton';
+import Button from 'components/Button';
+import TodoList from 'components/TodoList7';
+import TodoEditor from 'components/TodoEditor5';
+import Filter from 'components/Filter4';
+import Stats from 'components/Stats2';
+import Modal from 'components/Modal';
+import Spinner from 'components/Spinner';
+import IconButton from 'components/IconButton';
 import { ReactComponent as AddIcon } from 'icons/add.svg';
 
 const iconStyles = {

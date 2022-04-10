@@ -2,12 +2,12 @@ import { useState } from 'react';
 import Container from 'components/Container';
 import Section from 'components/Section';
 import Button from 'components/Button';
-import EffectHook from 'components/EffectHook/EffectHook';
-import ColorPicker from 'components/ColorPicker4/ColorPicker';
-import Counter from 'components/Counter2/Counter';
-import Form from 'components/Form2/Form';
-import FormLS from 'components/Form3/Form';
-import Clock from 'components/Clock2/Clock';
+import EffectHook from 'components/EffectHook';
+import ColorPicker from 'components/ColorPicker4';
+import Counter from 'components/Counter2';
+import Form from 'components/Form2';
+import FormLS from 'components/Form3';
+import Clock from 'components/Clock2';
 import colorPickerOptions from 'db/colorPickerOptions.json';
 import 'App/App.css';
 

@@ -1,7 +1,7 @@
 import { useReducer } from 'react';
 import PropTypes from 'prop-types';
-import Controls from './Controls/Controls';
-import Value from './Value/Value';
+import Controls from './Controls';
+import Value from './Value';
 import s from './Counter.module.css';
 
 function countReducer(state, action) {

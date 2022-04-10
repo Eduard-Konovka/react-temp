@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
 import { useDeleteTodoMutation } from 'store/redux6/todos/todoSlice';
 import Button from 'components/Button';
-import Spinner from 'components/Spinner/Spinner';
+import Spinner from 'components/Spinner';
 import s from './Todo.module.css';
 
 const Todo = ({ id, name, number }) => {

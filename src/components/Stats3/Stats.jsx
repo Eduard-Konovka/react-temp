@@ -1,28 +1,17 @@
-import { connect } from 'react-redux';
+import { useSelector } from 'react-redux';
+import { contactsSelectors } from 'store/redux7/contacts';
 import s from './Stats.module.css';
 
-const Stats = ({ total, completed }) => (
-  <div className={s.stats}>
-    <p className={s.item}>
-      <span className={s.value}>{total}</span>
-      <span className={s.label}>Всего</span>
-    </p>
-    <p className={s.item}>
-      <span className={s.value}>{completed}</span>
-      <span className={s.label}>Выполнено</span>
-    </p>
-  </div>
-);
+export default function Stats() {
+  const total = useSelector(contactsSelectors.getTotalContactCount);
 
-const getCompletedContactsCount = contacts =>
-  contacts.reduce(
-    (total, contact) => (contact.completed ? total + 1 : total),
-    0,
+  return (
+    <div className={s.stats}>
+      <p className={s.item}>
+        <span className={s.label}>You have</span>
+        <span className={s.value}>{total}</span>
+        <span className={s.label}>contacts</span>
+      </p>
+    </div>
   );
-
-const mapStateToProps = state => ({
-  total: state.contacts.items.length,
-  completed: getCompletedContactsCount(state.contacts.items),
-});
-
-export default connect(mapStateToProps)(Stats);
+}

@@ -2,7 +2,7 @@ import { Navigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { useCreateTodoMutation } from 'store/redux6/todos/todoSlice';
 import Button from 'components/Button';
-import Spinner from 'components/Spinner/Spinner';
+import Spinner from 'components/Spinner';
 import s from './CreateTodo.module.css';
 
 export default function CreateTodo() {

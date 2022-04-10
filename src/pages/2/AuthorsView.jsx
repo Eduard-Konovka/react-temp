@@ -2,8 +2,8 @@ import { useState, useEffect, lazy, Suspense } from 'react';
 import { NavLink, Routes, Route } from 'react-router-dom';
 import slugify from 'slugify';
 import * as bookShelfAPI from 'services/bookshelf-api';
-import PageHeading from 'components/PageHeading/PageHeading';
-import Spinner from 'components/Spinner/Spinner';
+import PageHeading from 'components/PageHeading';
+import Spinner from 'components/Spinner';
 // import AuthorSubView from './AuthorSubView';
 
 const AuthorSubView = lazy(() =>

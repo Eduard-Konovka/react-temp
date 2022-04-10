@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Button from 'components/Button/Button';
+import Button from 'components/Button';
 
 export default function EffectHook() {
   const [count, setCount] = useState(0);

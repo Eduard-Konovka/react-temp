@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import slugify from 'slugify';
 import * as bookShelfAPI from 'services/bookshelf-api';
-import PageHeading from 'components/PageHeading/PageHeading';
+import PageHeading from 'components/PageHeading';
 
 const makeSlug = string => slugify(string, { lower: true });
 

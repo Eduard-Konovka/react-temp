@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { authOperations } from 'store/redux7/auth';
-import Button from 'components/Button/Button';
+import Button from 'components/Button';
 
 const styles = {
   form: {

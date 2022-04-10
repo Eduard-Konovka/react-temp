@@ -2,14 +2,14 @@ import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { contactsOperations, contactsSelectors } from 'store/redux7/contacts';
 import Section from 'components/Section';
-import ContactList from 'components/ContactList/ContactList';
-import ContactForm from 'components/ContactForm/ContactForm';
-import Filter from 'components/Filter5/Filter';
-import Stats from 'components/Stats3/Stats';
-import Modal from 'components/Modal/Modal';
-import Button from 'components/Button/Button';
-import IconButton from 'components/IconButton/IconButton';
-import Spinner from 'components/Spinner/Spinner';
+import ContactList from 'components/ContactList';
+import ContactForm from 'components/ContactForm';
+import Filter from 'components/Filter5';
+import Stats from 'components/Stats3';
+import Modal from 'components/Modal';
+import Button from 'components/Button';
+import IconButton from 'components/IconButton';
+import Spinner from 'components/Spinner';
 import { ReactComponent as AddIcon } from 'icons/add.svg';
 
 const iconStyles = {
@@ -34,6 +34,7 @@ export default function ContactView() {
         <Stats />
         <IconButton
           type="button"
+          title="Добавить контакт"
           style={iconStyles}
           onClick={toggleModal}
           aria-label="Добавить контакт"

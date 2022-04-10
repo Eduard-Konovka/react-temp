@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import slugify from 'slugify';
 import { booksOperations, booksSelectors } from 'store/redux5/books';
-import PageHeading from 'components/PageHeading/PageHeading';
+import PageHeading from 'components/PageHeading';
 
 const makeSlug = string => slugify(string, { lower: true });
 

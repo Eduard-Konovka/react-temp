@@ -1,5 +1,5 @@
 import axios from 'axios';
-import Button from 'components/Button/Button';
+import Button from 'components/Button';
 
 export default function UploadView() {
   const handleSubmit = e => {

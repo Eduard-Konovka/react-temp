@@ -4,8 +4,8 @@ import { Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import { authOperations, authSelectors } from 'store/redux7/auth';
 import Container from 'components/Container';
-import AppBar from 'components/AppBar5/AppBar';
-import Spinner from 'components/Spinner/Spinner';
+import AppBar from 'components/AppBar5';
+import Spinner from 'components/Spinner';
 import PrivateRoute from 'components/PrivateRoute';
 import PublicRoute from 'components/PublicRoute';
 import 'App/App.css';
@@ -28,7 +28,7 @@ const UploadView = lazy(() =>
 
 export default function App() {
   const dispatch = useDispatch();
-  const isFetchingCurrentUser = useSelector(authSelectors.getIiFetchingCurrent);
+  const isFetchingCurrentUser = useSelector(authSelectors.getFetchingCurrent);
 
   useEffect(() => {
     dispatch(authOperations.fetchCurrentUser());
@@ -41,6 +41,7 @@ export default function App() {
       ) : (
         <>
           <AppBar />
+
           <Suspense fallback={<Spinner size={200} />}>
             <Routes>
               <Route
@@ -85,9 +86,10 @@ export default function App() {
               />
             </Routes>
           </Suspense>
-          <ToastContainer autoClose={3000} />
         </>
       )}
+
+      <ToastContainer autoClose={3000} />
     </Container>
   );
 }

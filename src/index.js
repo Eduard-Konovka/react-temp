@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
-import store from 'store/redux1/store';
+import store1 from 'store/redux1/store';
 import store2 from 'store/redux2/store';
 import store3 from 'store/redux3/store';
 import store4 from 'store/redux4/store';
@@ -28,7 +28,7 @@ import App13 from 'App/App13';
 import App13a from 'App/App13a';
 import App13b from 'App/App13b';
 import App15and16 from 'App/App15and16';
-import Spinner from './components/Spinner/Spinner';
+import Spinner from 'components/Spinner';
 import 'index.css';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -47,7 +47,7 @@ ReactDOM.render(
       <App10 />
       <App10a />
     </BrowserRouter>
-    <Provider store={store}>
+    <Provider store={store1}>
       <BrowserRouter>
         <App11 />
       </BrowserRouter>

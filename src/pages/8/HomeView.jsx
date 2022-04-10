@@ -2,7 +2,7 @@ import { useState, lazy } from 'react';
 import { useGetPokemonByNameQuery } from 'store/redux6/pokemon/pokemonSlice';
 import PokemonDataView from 'components/Pokemon2/PokemonDataView';
 import Button from 'components/Button';
-import Spinner from 'components/Spinner/Spinner';
+import Spinner from 'components/Spinner';
 import errorImage from 'pages/7/error.jpg';
 
 const NotFoundView = lazy(() =>

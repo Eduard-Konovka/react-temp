@@ -1,11 +1,11 @@
 import { Component } from 'react';
-import Button from 'components/Button/Button';
-import TodoList from 'components/TodoList6/TodoList';
-import TodoEditor from 'components/TodoEditor4/TodoEditor';
-import Filter from 'components/Filter3/Filter';
-import Stats from 'components/Stats2/Stats';
-import Modal from 'components/Modal/Modal';
-import IconButton from 'components/IconButton/IconButton';
+import Button from 'components/Button';
+import TodoList from 'components/TodoList6';
+import TodoEditor from 'components/TodoEditor4';
+import Filter from 'components/Filter3';
+import Stats from 'components/Stats2';
+import Modal from 'components/Modal';
+import IconButton from 'components/IconButton';
 import { ReactComponent as AddIcon } from 'icons/add.svg';
 
 const iconStyles = {

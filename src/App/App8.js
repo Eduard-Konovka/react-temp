@@ -2,8 +2,8 @@ import Container from 'components/Container';
 import Section from 'components/Section';
 import SkipEffectOnFirstRender from 'components/SkipEffectOnFirstRender/SkipEffectOnFirstRender';
 import PokemonView from 'components/Pokemon2/PokemonView';
-import Counter from 'components/Counter3/Counter';
-import Friends from 'components/Friends/Friends';
+import Counter from 'components/Counter3';
+import Friends from 'components/Friends';
 import 'App/App.css';
 
 export default function App() {

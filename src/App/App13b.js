@@ -2,8 +2,8 @@ import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import Container from 'components/Container';
-import AppBar from 'components/AppBar4/AppBar';
-import Spinner from 'components/Spinner/Spinner';
+import AppBar from 'components/AppBar4';
+import Spinner from 'components/Spinner';
 import errorImage from 'pages/7/error.jpg';
 import 'App/App.css';
 
