@@ -47,11 +47,13 @@ ReactDOM.render(
       <App10 />
       <App10a />
     </BrowserRouter>
+
     <Provider store={store1}>
       <BrowserRouter>
         <App11 />
       </BrowserRouter>
     </Provider>
+
     <Provider store={store2.store}>
       <PersistGate
         loading={<Spinner size={200} />}
@@ -62,6 +64,7 @@ ReactDOM.render(
         </BrowserRouter>
       </PersistGate>
     </Provider>
+
     <Provider store={store3.store}>
       <PersistGate
         loading={<Spinner size={200} />}
@@ -72,21 +75,25 @@ ReactDOM.render(
         </BrowserRouter>
       </PersistGate>
     </Provider>
+
     <Provider store={store4}>
       <BrowserRouter>
         <App13 />
       </BrowserRouter>
     </Provider>
+
     <BrowserRouter>
       <Provider store={store5}>
         <App13a />
       </Provider>
     </BrowserRouter>
+
     <Provider store={store6}>
       <BrowserRouter>
         <App13b />
       </BrowserRouter>
     </Provider>
+
     <Provider store={store7}>
       <PersistGate loading={<Spinner size={200} />} persistor={persistor7}>
         <BrowserRouter>
